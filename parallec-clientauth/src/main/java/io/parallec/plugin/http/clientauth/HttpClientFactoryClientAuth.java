@@ -110,6 +110,8 @@ public final class HttpClientFactoryClientAuth {
 					.setConnectionTimeoutInMs(ParallecGlobalConfig.ningFastClientConnectionTimeoutMillis);
 			builderFastClient
 					.setRequestTimeoutInMs(ParallecGlobalConfig.ningFastClientRequestTimeoutMillis);
+			builderFastClient
+					.setIdleConnectionInPoolTimeoutInMs(ParallecGlobalConfig.ningFastClientIdleConnectionInPoolTimeoutMillis);
 			
 			logger.info("FastClient Client Auth: ningFastClientConnectionTimeoutMillis: {}", ParallecGlobalConfig.ningFastClientConnectionTimeoutMillis);
 			logger.info("FastClient Client Auth: ningFastClientRequestTimeoutMillis: {}", ParallecGlobalConfig.ningFastClientRequestTimeoutMillis);
